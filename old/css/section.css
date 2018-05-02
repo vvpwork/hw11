@@ -1,0 +1,188 @@
+.section {
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-bottom: 90px;
+}
+
+.section__title{
+    font:700 30px 'Montserrat', sans-serif;
+    color: #323232;
+    margin-bottom: 64px;
+}
+
+.section__title::before{
+    content: "";
+    display: block;
+    font: 400 24px 'Kaushan Script', 'cursive';
+    text-transform: none;
+    margin-bottom: 25px;
+}
+
+.section__title--service::before {
+    content:"We Work With";
+}
+.section__title--team::before{
+    content:"We we are";
+}
+.section__title::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color:#F28080;
+    margin: 40px auto;
+}
+.section__list{
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.section-items{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+    width: 380px;
+    padding: 0px 0px 0px 60px;
+}
+
+.section-items:nth-of-type(-n+3){
+    margin-bottom: 60px;
+}
+
+.section-items__title{
+    font: 400 14px 'Montserrat', sans-serif;
+    color: #323232;
+    text-transform: uppercase;
+}
+.section-items__title::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 100%;
+    top: 20px;
+    left: 0px;
+}
+.section-items__title--alarm::before{
+    background: url(../img/icon/icon-alarm.svg) no-repeat;
+}
+.section-items__title--graph::before{
+    background: url(../img/icon/icon-graph.svg) no-repeat;
+}
+.section-items__title--computer::before{
+    background: url(../img/icon/icon-computer.svg) no-repeat;
+}
+.section-items__title--book::before{
+    background: url(../img/icon/icon-book.svg) no-repeat;
+}
+.section-items__title--home::before{
+    background: url(../img/icon/icon-home.svg) no-repeat;
+}
+
+.section-items__title--image::before{
+    background: url(../img/icon/icon-image.svg) no-repeat;
+}
+
+.section__text {
+    text-align: center;
+    padding: 0 60px;
+    margin-bottom: 90px;
+}
+
+
+.section-items__title--center, .section-items__text--center{
+    text-align: center;
+}
+.section-items__text--center{
+    font-style: italic;
+}
+.section-items--team{
+    padding: 0;
+}
+
+.section-items__mask{
+    display: none;
+    position: absolute;
+    top: 0px;
+    background: -webkit-gradient( linear, left top, left bottom, from(rgba(243, 130, 129, 0.9 )), to(rgba(252, 226, 138, 0.95)) );
+    background: -webkit-linear-gradient( rgba(243, 130, 129, 0.9 ), rgba(252, 226, 138, 0.95) );
+    background: -o-linear-gradient( rgba(243, 130, 129, 0.9 ), rgba(252, 226, 138, 0.95) );
+    background: linear-gradient( rgba(243, 130, 129, 0.9 ), rgba(252, 226, 138, 0.95) );
+    width: 380px;
+    height: 470px;
+    -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 10px 12px 0px 0px #95e1d3;
+            box-shadow: 10px 12px 0px 0px #95e1d3;
+}
+
+.section-items:hover .section-items__mask{
+    display: block;
+}
+
+.social-list{
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 225px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    
+}
+
+
+.social__link
+ {
+    width: 60px;
+    height: 60px;
+    background: #FCE38A;
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    
+}
+
+.social__items:not(:last-child){
+    border-right: 1px solid #F38181;
+}
+
+.social__icon {
+    width: 32px;
+    height: 32px;
+    fill:#F38181;
+}
+
+
+.social__link:hover .social__icon{
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    fill: #fff;
+}
+
+.social__link:hover{
+    background-color:  #F38181;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
