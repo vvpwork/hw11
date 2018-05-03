@@ -1,11 +1,10 @@
 body { 
+    @extend %text-body;
     padding: 0;
     margin: 0;
-    font: 300 15px 'Roboto', "sans serif";
     line-height: 1;
-    color: #989898;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    color: $text-color-primary;
+    box-sizing: border-box;
 }
 
 .visually-hidden:not(:focus):not(:active),

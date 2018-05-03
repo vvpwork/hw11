@@ -10,4 +10,46 @@
     display: inline-block;
     text-decoration: none;     
 }
+// text
 
+%text-body{
+    font: 300 15px 'Roboto', "sans serif";
+}
+%text-site-nav{
+    font: 400 15px 'Montserrat', sans-serif;
+}
+
+%text-logo{
+    font: 700 30px 'Montserrat', sans-serif;
+}
+
+%text-title-header{
+    font: 800 150px 'Montserrat', sans-serif;
+}
+
+%text-title-heder-before{
+    font: 400 72px 'Kaushan Script', 'cursive';
+}
+
+%text-title-section{
+    font:700 30px 'Montserrat', sans-serif;
+}
+
+
+
+%img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+%button{
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    font: 700 14px 'Montserrat', sans-serif;
+}

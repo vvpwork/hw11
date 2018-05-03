@@ -1,4 +1,4 @@
 @mixin title($textTransform:uppercase, $textAlign:center){
-    text-transform: $textAlign;
+    text-transform: $textTransform;
     text-align: $textAlign;
 }

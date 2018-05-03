@@ -8,5 +8,13 @@
 @import 'base';
 
 // componenets
+    // header
+        @import "components/header/page-header";
+        @import 'components/header/site-nav';
+        @import 'components/header/logo';
+        @import 'components/header/header-title';
+        @import 'components/header/button-header';
 
-@import "components/page-header";
+    // section
+        @import 'components/main/section';
+        @import 'components/main/section-title';

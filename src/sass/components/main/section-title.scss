@@ -1,0 +1,5 @@
+.section__title{
+    @extend %text-title-section;
+    color: $text-color-title-section;
+    margin-bottom: 64px;
+}

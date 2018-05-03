@@ -100,7 +100,7 @@ gulp.task('fonts', () =>
 
 gulp.task('watch', () => {
   gulp.watch('src/**/*.html', ['html']).on('change', browserSync.reload);
-  gulp.watch('src/sass/**/*.scss', ['styles']).on('change', browserSync.reload) ;
+  gulp.watch('src/sass/**/*.scss', ['styles']);
   gulp.watch('src/js/**/*.js', ['scripts']);
 });
 

@@ -1,0 +1,6 @@
+.page-logo{
+    @extend %link;
+    @extend %text-logo;
+    text-decoration: none; 
+    color: $text-color-header;
+}

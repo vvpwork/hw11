@@ -1,0 +1,18 @@
+.page-header__title{
+    @include title ();
+    @extend %text-title-header;
+    
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1;
+    margin-bottom: 75px;
+    &::before{
+        @include title ();
+        @extend %text-title-header-before;
+        content: "Creative Template";
+        text-transform: none;
+        margin-bottom: 63px;
+        display: block;
+
+    }
+}

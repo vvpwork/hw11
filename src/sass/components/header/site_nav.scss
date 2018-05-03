@@ -1,0 +1,35 @@
+.site-nav {
+    @extend %list;
+    max-width: 1200px; 
+    margin: 0 auto;
+    margin-bottom: 170px;
+       
+}
+.site-nav__link{
+    @extend %link;
+    @extend %text-site-nav;
+    padding: 0px 0px 10px 0;
+    color: $text-color-header;
+    text-transform: uppercase;
+    -webkit-transition: color 0.1s linear, border 0.1s linear;
+    -o-transition: color 0.1s linear, border 0.1s linear;
+    transition: color 0.1s linear, border 0.1s linear;
+}
+
+.site-nav__link:hover{
+    color: #FBE28B;
+    border-bottom: 3px solid #FBE28B;
+}
+.site-nav__list{
+    @extend %list;
+    width: 50%;
+}
+.site-nav__icon{
+    width: 20px;
+    height:20px;
+    fill: $text-color-header;
+    
+}
+.site-nav__icon:hover{
+    fill: #FBE28B;
+}
