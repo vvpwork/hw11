@@ -2,3 +2,25 @@
     text-transform: $textTransform;
     text-align: $textAlign;
 }
+@mixin title-before($cont:"We Work With", $dis:block,$tt:none, $mb:25px ){
+    content: $cont;
+    display: $dis;
+    text-transform: $tt;
+    margin-bottom: $mb;
+}
+
+
+@mixin icons-before($baseclass, $list, $path, $ext){
+    @each $icon in $list {
+        .#{$baseclass}#{$icon}::before{
+            background: url(#{$path}#{$icon}.#{$ext}) #{'no-repeat'}; 
+        }
+    }
+}
+
+
+
+
+
+
+

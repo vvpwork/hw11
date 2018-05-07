@@ -1,0 +1,33 @@
+.section__list{
+    @extend %list;
+    flex-wrap: wrap;
+}
+.section-items{
+    position: relative;
+    box-sizing: border-box;
+    width: 380px;
+    padding: 0px 0px 0px 60px;
+    box-sizing: border-box;
+}
+.section-items__title{
+    @extend %text-title-items;
+    color: $text-color-title-section;
+    text-transform: uppercase;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 35px;
+        height: 100%;
+        top: 20px;
+        left: 0px;
+    }
+    &--center{
+        @include title();
+    }
+}
+
+@include icons-before("section-items__title--", $icons, '../img/icon/icon-', 'svg');
+
+
+

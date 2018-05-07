@@ -9,7 +9,7 @@
     @extend %link;
     @extend %text-site-nav;
     padding: 0px 0px 10px 0;
-    color: $text-color-header;
+    color: $text-color-white;
     text-transform: uppercase;
     -webkit-transition: color 0.1s linear, border 0.1s linear;
     -o-transition: color 0.1s linear, border 0.1s linear;
@@ -17,8 +17,8 @@
 }
 
 .site-nav__link:hover{
-    color: #FBE28B;
-    border-bottom: 3px solid #FBE28B;
+    color: $bg-color-link;
+    border-bottom: 3px solid $bg-color-link;
 }
 .site-nav__list{
     @extend %list;
@@ -27,9 +27,9 @@
 .site-nav__icon{
     width: 20px;
     height:20px;
-    fill: $text-color-header;
+    fill: $text-color-white;
     
 }
 .site-nav__icon:hover{
-    fill: #FBE28B;
+    fill: $bg-color-link;
 }

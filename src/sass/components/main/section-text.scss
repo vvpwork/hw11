@@ -1,0 +1,14 @@
+.section-items__text{
+    line-height: 1.5;
+    &--center{
+        @include title(none, center);
+        font-style: italic;
+    }
+}
+
+.section__text{
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 60px;
+    margin-bottom: 90px;
+}

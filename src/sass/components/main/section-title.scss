@@ -1,5 +1,24 @@
 .section__title{
+    @include title();
     @extend %text-title-section;
     color: $text-color-title-section;
     margin-bottom: 64px;
+    &::before{
+        @include title-before();
+        @extend %text-title-before;
+    }
+    &::after{
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        background-color:#F28080;
+        margin: 40px auto;
+    }
+}
+
+.section__title--team{
+    &::before {
+        @include title-before("We we are");
+    }
 }
