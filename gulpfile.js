@@ -34,7 +34,7 @@ gulp.task('html', () =>
 
 gulp.task('styles', () =>
   gulp
-    .src('./src/scss/styles.scss')
+    .src('./src/sass/styles.scss')
     .pipe(plumber())
     .pipe(
       stylelint({
